@@ -9,10 +9,10 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     
-    fileprivate let textField = TextField()
+    fileprivate let textField = UITextField()
     let loginButton = UIButton(type: .system)
     let autoFillTextFild = "Please enter your nick name..."
     var trimmedTextField : String?
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         textField.layer.borderColor = UIColor.black.cgColor
         textField.layer.borderWidth = 1
         textField.placeholder = autoFillTextFild
-        textField.insetX = 10
+        //textField.insetX = 10
         self.view.addSubview(textField)
         textField.snp.makeConstraints { (make) in
             make.left.equalTo(self.view.snp.left).inset(20)
@@ -119,7 +119,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 }
-extension ViewController: UITextFieldDelegate {
+extension LoginViewController: UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if string == "" {

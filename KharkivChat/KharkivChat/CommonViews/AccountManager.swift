@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class AccountManager : NSObject {
+    static let URL = "terst"
+    static let sharedInstance = AccountManager()
+    
+    var nickName = "Test"
+}

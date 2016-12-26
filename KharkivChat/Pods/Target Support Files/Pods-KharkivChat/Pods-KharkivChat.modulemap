@@ -1,0 +1,6 @@
+framework module Pods_KharkivChat {
+  umbrella header "Pods-KharkivChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

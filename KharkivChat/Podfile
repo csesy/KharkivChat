@@ -8,6 +8,8 @@ target 'KharkivChat' do
   pod 'SlideMenuControllerSwift'
   pod 'Alamofire'
   pod 'AlamofireObjectMapper'
+  pod 'Chatto'
+  pod 'ChattoAdditions'
   # Pods for KharkivChat
 
 end

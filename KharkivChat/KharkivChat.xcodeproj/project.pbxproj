@@ -7,21 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FC5EE9353DDFBCF616E8D5E /* Pods_KharkivChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB1005E680BEB6A09A1DBB0 /* Pods_KharkivChat.framework */; };
+		C936DB571E117AAB008F2056 /* ApiGetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB561E117AAB008F2056 /* ApiGetMessage.swift */; };
+		C936DB5D1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB5A1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift */; };
+		C936DB5E1E117ACC008F2056 /* BaseMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB5B1E117ACC008F2056 /* BaseMessageHandler.swift */; };
+		C936DB5F1E117ACC008F2056 /* ChatItemsDemoDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB5C1E117ACC008F2056 /* ChatItemsDemoDecorator.swift */; };
+		C936DB6B1E117AD9008F2056 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB601E117AD9008F2056 /* ConversationsViewController.swift */; };
+		C936DB6C1E117AD9008F2056 /* DemoChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB611E117AD9008F2056 /* DemoChatViewController.swift */; };
+		C936DB6D1E117AD9008F2056 /* DemoPhotoMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB621E117AD9008F2056 /* DemoPhotoMessageHandler.swift */; };
+		C936DB6E1E117AD9008F2056 /* DemoPhotoMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB631E117AD9008F2056 /* DemoPhotoMessageModel.swift */; };
+		C936DB6F1E117AD9008F2056 /* DemoPhotoMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB641E117AD9008F2056 /* DemoPhotoMessageViewModel.swift */; };
+		C936DB701E117AD9008F2056 /* DemoTextMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB651E117AD9008F2056 /* DemoTextMessageHandler.swift */; };
+		C936DB711E117AD9008F2056 /* DemoTextMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB661E117AD9008F2056 /* DemoTextMessageModel.swift */; };
+		C936DB721E117AD9008F2056 /* DemoTextMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB671E117AD9008F2056 /* DemoTextMessageViewModel.swift */; };
+		C936DB731E117AD9008F2056 /* FakeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB681E117AD9008F2056 /* FakeDataSource.swift */; };
+		C936DB741E117AD9008F2056 /* FakeMessageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB691E117AD9008F2056 /* FakeMessageFactory.swift */; };
+		C936DB751E117AD9008F2056 /* FakeMessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB6A1E117AD9008F2056 /* FakeMessageSender.swift */; };
+		C936DB771E117ADF008F2056 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB761E117ADF008F2056 /* LoginViewController.swift */; };
+		C936DB7B1E117AE5008F2056 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB791E117AE5008F2056 /* User.swift */; };
+		C936DB7C1E117AE5008F2056 /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB7A1E117AE5008F2056 /* Visit.swift */; };
+		C936DB841E117AEE008F2056 /* SendingStatusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB7D1E117AEE008F2056 /* SendingStatusCollectionViewCell.swift */; };
+		C936DB851E117AEE008F2056 /* SendingStatusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C936DB7E1E117AEE008F2056 /* SendingStatusCollectionViewCell.xib */; };
+		C936DB861E117AEE008F2056 /* SendingStatusPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB7F1E117AEE008F2056 /* SendingStatusPresenter.swift */; };
+		C936DB871E117AEE008F2056 /* SlidingDatasSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB801E117AEE008F2056 /* SlidingDatasSource.swift */; };
+		C936DB881E117AEE008F2056 /* TimeSeparatorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB811E117AEE008F2056 /* TimeSeparatorCollectionViewCell.swift */; };
+		C936DB891E117AEE008F2056 /* TimeSeparatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB821E117AEE008F2056 /* TimeSeparatorModel.swift */; };
+		C936DB8A1E117AEE008F2056 /* TimeSeparatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB831E117AEE008F2056 /* TimeSeparatorPresenter.swift */; };
+		C936DB8D1E117AF8008F2056 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB8B1E117AF8008F2056 /* ChatViewController.swift */; };
+		C936DB8E1E117AF8008F2056 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB8C1E117AF8008F2056 /* LeftMenuViewController.swift */; };
+		C936DB921E117C70008F2056 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB911E117C70008F2056 /* AccountManager.swift */; };
 		C9ECAF431E0D602D00358F21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ECAF421E0D602D00358F21 /* AppDelegate.swift */; };
-		C9ECAF451E0D602D00358F21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ECAF441E0D602D00358F21 /* ViewController.swift */; };
-		C9ECAF481E0D602D00358F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9ECAF461E0D602D00358F21 /* Main.storyboard */; };
 		C9ECAF4A1E0D602D00358F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9ECAF491E0D602D00358F21 /* Assets.xcassets */; };
 		C9ECAF4D1E0D602D00358F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9ECAF4B1E0D602D00358F21 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		771194759F52CC5C2424663C /* Pods-KharkivChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KharkivChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-KharkivChat/Pods-KharkivChat.release.xcconfig"; sourceTree = "<group>"; };
+		C936DB561E117AAB008F2056 /* ApiGetMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiGetMessage.swift; sourceTree = "<group>"; };
+		C936DB5A1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMessageCollectionViewCellAvatarStyle.swift; sourceTree = "<group>"; };
+		C936DB5B1E117ACC008F2056 /* BaseMessageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMessageHandler.swift; sourceTree = "<group>"; };
+		C936DB5C1E117ACC008F2056 /* ChatItemsDemoDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatItemsDemoDecorator.swift; sourceTree = "<group>"; };
+		C936DB601E117AD9008F2056 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		C936DB611E117AD9008F2056 /* DemoChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatViewController.swift; sourceTree = "<group>"; };
+		C936DB621E117AD9008F2056 /* DemoPhotoMessageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPhotoMessageHandler.swift; sourceTree = "<group>"; };
+		C936DB631E117AD9008F2056 /* DemoPhotoMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPhotoMessageModel.swift; sourceTree = "<group>"; };
+		C936DB641E117AD9008F2056 /* DemoPhotoMessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPhotoMessageViewModel.swift; sourceTree = "<group>"; };
+		C936DB651E117AD9008F2056 /* DemoTextMessageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTextMessageHandler.swift; sourceTree = "<group>"; };
+		C936DB661E117AD9008F2056 /* DemoTextMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTextMessageModel.swift; sourceTree = "<group>"; };
+		C936DB671E117AD9008F2056 /* DemoTextMessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTextMessageViewModel.swift; sourceTree = "<group>"; };
+		C936DB681E117AD9008F2056 /* FakeDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeDataSource.swift; sourceTree = "<group>"; };
+		C936DB691E117AD9008F2056 /* FakeMessageFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeMessageFactory.swift; sourceTree = "<group>"; };
+		C936DB6A1E117AD9008F2056 /* FakeMessageSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeMessageSender.swift; sourceTree = "<group>"; };
+		C936DB761E117ADF008F2056 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C936DB791E117AE5008F2056 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C936DB7A1E117AE5008F2056 /* Visit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visit.swift; sourceTree = "<group>"; };
+		C936DB7D1E117AEE008F2056 /* SendingStatusCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendingStatusCollectionViewCell.swift; sourceTree = "<group>"; };
+		C936DB7E1E117AEE008F2056 /* SendingStatusCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendingStatusCollectionViewCell.xib; sourceTree = "<group>"; };
+		C936DB7F1E117AEE008F2056 /* SendingStatusPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendingStatusPresenter.swift; sourceTree = "<group>"; };
+		C936DB801E117AEE008F2056 /* SlidingDatasSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingDatasSource.swift; sourceTree = "<group>"; };
+		C936DB811E117AEE008F2056 /* TimeSeparatorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSeparatorCollectionViewCell.swift; sourceTree = "<group>"; };
+		C936DB821E117AEE008F2056 /* TimeSeparatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSeparatorModel.swift; sourceTree = "<group>"; };
+		C936DB831E117AEE008F2056 /* TimeSeparatorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSeparatorPresenter.swift; sourceTree = "<group>"; };
+		C936DB8B1E117AF8008F2056 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = ViewControllers/ChatViewController.swift; sourceTree = "<group>"; };
+		C936DB8C1E117AF8008F2056 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftMenuViewController.swift; path = ViewControllers/LeftMenuViewController.swift; sourceTree = "<group>"; };
+		C936DB911E117C70008F2056 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountManager.swift; path = CommonViews/AccountManager.swift; sourceTree = "<group>"; };
 		C9ECAF3F1E0D602D00358F21 /* KharkivChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KharkivChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ECAF421E0D602D00358F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9ECAF441E0D602D00358F21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9ECAF471E0D602D00358F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9ECAF491E0D602D00358F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9ECAF4C1E0D602D00358F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9ECAF4E1E0D602D00358F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB1005E680BEB6A09A1DBB0 /* Pods_KharkivChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KharkivChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBE1769A0E3D5C4FFA807B8F /* Pods-KharkivChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KharkivChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KharkivChat/Pods-KharkivChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +85,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC5EE9353DDFBCF616E8D5E /* Pods_KharkivChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19384489EF62D77C1BBDD7DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAB1005E680BEB6A09A1DBB0 /* Pods_KharkivChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A616B312422B2992A6520D6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBE1769A0E3D5C4FFA807B8F /* Pods-KharkivChat.debug.xcconfig */,
+				771194759F52CC5C2424663C /* Pods-KharkivChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C936DB551E117AAB008F2056 /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				C936DB561E117AAB008F2056 /* ApiGetMessage.swift */,
+			);
+			name = Methods;
+			path = API/Methods;
+			sourceTree = "<group>";
+		};
+		C936DB781E117AE5008F2056 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C936DB791E117AE5008F2056 /* User.swift */,
+				C936DB7A1E117AE5008F2056 /* Visit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C9ECAF361E0D602D00358F21 = {
 			isa = PBXGroup;
 			children = (
 				C9ECAF411E0D602D00358F21 /* KharkivChat */,
 				C9ECAF401E0D602D00358F21 /* Products */,
+				A616B312422B2992A6520D6B /* Pods */,
+				19384489EF62D77C1BBDD7DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +149,36 @@
 			isa = PBXGroup;
 			children = (
 				C9ECAF421E0D602D00358F21 /* AppDelegate.swift */,
-				C9ECAF441E0D602D00358F21 /* ViewController.swift */,
-				C9ECAF461E0D602D00358F21 /* Main.storyboard */,
 				C9ECAF491E0D602D00358F21 /* Assets.xcassets */,
 				C9ECAF4B1E0D602D00358F21 /* LaunchScreen.storyboard */,
 				C9ECAF4E1E0D602D00358F21 /* Info.plist */,
+				C936DB911E117C70008F2056 /* AccountManager.swift */,
+				C936DB5A1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift */,
+				C936DB5B1E117ACC008F2056 /* BaseMessageHandler.swift */,
+				C936DB601E117AD9008F2056 /* ConversationsViewController.swift */,
+				C936DB611E117AD9008F2056 /* DemoChatViewController.swift */,
+				C936DB621E117AD9008F2056 /* DemoPhotoMessageHandler.swift */,
+				C936DB631E117AD9008F2056 /* DemoPhotoMessageModel.swift */,
+				C936DB641E117AD9008F2056 /* DemoPhotoMessageViewModel.swift */,
+				C936DB651E117AD9008F2056 /* DemoTextMessageHandler.swift */,
+				C936DB661E117AD9008F2056 /* DemoTextMessageModel.swift */,
+				C936DB671E117AD9008F2056 /* DemoTextMessageViewModel.swift */,
+				C936DB681E117AD9008F2056 /* FakeDataSource.swift */,
+				C936DB691E117AD9008F2056 /* FakeMessageFactory.swift */,
+				C936DB6A1E117AD9008F2056 /* FakeMessageSender.swift */,
+				C936DB5C1E117ACC008F2056 /* ChatItemsDemoDecorator.swift */,
+				C936DB761E117ADF008F2056 /* LoginViewController.swift */,
+				C936DB7D1E117AEE008F2056 /* SendingStatusCollectionViewCell.swift */,
+				C936DB7E1E117AEE008F2056 /* SendingStatusCollectionViewCell.xib */,
+				C936DB7F1E117AEE008F2056 /* SendingStatusPresenter.swift */,
+				C936DB801E117AEE008F2056 /* SlidingDatasSource.swift */,
+				C936DB811E117AEE008F2056 /* TimeSeparatorCollectionViewCell.swift */,
+				C936DB821E117AEE008F2056 /* TimeSeparatorModel.swift */,
+				C936DB8B1E117AF8008F2056 /* ChatViewController.swift */,
+				C936DB8C1E117AF8008F2056 /* LeftMenuViewController.swift */,
+				C936DB831E117AEE008F2056 /* TimeSeparatorPresenter.swift */,
+				C936DB781E117AE5008F2056 /* Models */,
+				C936DB551E117AAB008F2056 /* Methods */,
 			);
 			path = KharkivChat;
 			sourceTree = "<group>";
@@ -71,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9ECAF511E0D602D00358F21 /* Build configuration list for PBXNativeTarget "KharkivChat" */;
 			buildPhases = (
+				6660A0B27D73A2A088687E85 /* [CP] Check Pods Manifest.lock */,
 				C9ECAF3B1E0D602D00358F21 /* Sources */,
 				C9ECAF3C1E0D602D00358F21 /* Frameworks */,
 				C9ECAF3D1E0D602D00358F21 /* Resources */,
+				4749B89024D51B61C2B35519 /* [CP] Embed Pods Frameworks */,
+				E04207E7CCADCC05FEA997A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,35 +246,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C936DB851E117AEE008F2056 /* SendingStatusCollectionViewCell.xib in Resources */,
 				C9ECAF4D1E0D602D00358F21 /* LaunchScreen.storyboard in Resources */,
 				C9ECAF4A1E0D602D00358F21 /* Assets.xcassets in Resources */,
-				C9ECAF481E0D602D00358F21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4749B89024D51B61C2B35519 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KharkivChat/Pods-KharkivChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6660A0B27D73A2A088687E85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E04207E7CCADCC05FEA997A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KharkivChat/Pods-KharkivChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9ECAF3B1E0D602D00358F21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9ECAF451E0D602D00358F21 /* ViewController.swift in Sources */,
+				C936DB771E117ADF008F2056 /* LoginViewController.swift in Sources */,
+				C936DB5D1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift in Sources */,
+				C936DB711E117AD9008F2056 /* DemoTextMessageModel.swift in Sources */,
+				C936DB731E117AD9008F2056 /* FakeDataSource.swift in Sources */,
+				C936DB5F1E117ACC008F2056 /* ChatItemsDemoDecorator.swift in Sources */,
+				C936DB6B1E117AD9008F2056 /* ConversationsViewController.swift in Sources */,
+				C936DB751E117AD9008F2056 /* FakeMessageSender.swift in Sources */,
+				C936DB6C1E117AD9008F2056 /* DemoChatViewController.swift in Sources */,
+				C936DB6F1E117AD9008F2056 /* DemoPhotoMessageViewModel.swift in Sources */,
+				C936DB8A1E117AEE008F2056 /* TimeSeparatorPresenter.swift in Sources */,
+				C936DB891E117AEE008F2056 /* TimeSeparatorModel.swift in Sources */,
+				C936DB741E117AD9008F2056 /* FakeMessageFactory.swift in Sources */,
+				C936DB5E1E117ACC008F2056 /* BaseMessageHandler.swift in Sources */,
 				C9ECAF431E0D602D00358F21 /* AppDelegate.swift in Sources */,
+				C936DB721E117AD9008F2056 /* DemoTextMessageViewModel.swift in Sources */,
+				C936DB921E117C70008F2056 /* AccountManager.swift in Sources */,
+				C936DB7C1E117AE5008F2056 /* Visit.swift in Sources */,
+				C936DB841E117AEE008F2056 /* SendingStatusCollectionViewCell.swift in Sources */,
+				C936DB871E117AEE008F2056 /* SlidingDatasSource.swift in Sources */,
+				C936DB701E117AD9008F2056 /* DemoTextMessageHandler.swift in Sources */,
+				C936DB6E1E117AD9008F2056 /* DemoPhotoMessageModel.swift in Sources */,
+				C936DB6D1E117AD9008F2056 /* DemoPhotoMessageHandler.swift in Sources */,
+				C936DB571E117AAB008F2056 /* ApiGetMessage.swift in Sources */,
+				C936DB7B1E117AE5008F2056 /* User.swift in Sources */,
+				C936DB861E117AEE008F2056 /* SendingStatusPresenter.swift in Sources */,
+				C936DB8D1E117AF8008F2056 /* ChatViewController.swift in Sources */,
+				C936DB8E1E117AF8008F2056 /* LeftMenuViewController.swift in Sources */,
+				C936DB881E117AEE008F2056 /* TimeSeparatorCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C9ECAF461E0D602D00358F21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9ECAF471E0D602D00358F21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9ECAF4B1E0D602D00358F21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -257,6 +445,7 @@
 		};
 		C9ECAF521E0D602D00358F21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE1769A0E3D5C4FFA807B8F /* Pods-KharkivChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TNNH6FD49C;
@@ -270,6 +459,7 @@
 		};
 		C9ECAF531E0D602D00358F21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 771194759F52CC5C2424663C /* Pods-KharkivChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TNNH6FD49C;
@@ -300,6 +490,7 @@
 				C9ECAF531E0D602D00358F21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

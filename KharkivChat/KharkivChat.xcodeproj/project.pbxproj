@@ -36,6 +36,7 @@
 		C936DB8D1E117AF8008F2056 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB8B1E117AF8008F2056 /* ChatViewController.swift */; };
 		C936DB8E1E117AF8008F2056 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB8C1E117AF8008F2056 /* LeftMenuViewController.swift */; };
 		C936DB921E117C70008F2056 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB911E117C70008F2056 /* AccountManager.swift */; };
+		C936DB951E118670008F2056 /* InsetTextFild.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB941E118670008F2056 /* InsetTextFild.swift */; };
 		C9ECAF431E0D602D00358F21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ECAF421E0D602D00358F21 /* AppDelegate.swift */; };
 		C9ECAF4A1E0D602D00358F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9ECAF491E0D602D00358F21 /* Assets.xcassets */; };
 		C9ECAF4D1E0D602D00358F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9ECAF4B1E0D602D00358F21 /* LaunchScreen.storyboard */; };
@@ -71,6 +72,7 @@
 		C936DB8B1E117AF8008F2056 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = ViewControllers/ChatViewController.swift; sourceTree = "<group>"; };
 		C936DB8C1E117AF8008F2056 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftMenuViewController.swift; path = ViewControllers/LeftMenuViewController.swift; sourceTree = "<group>"; };
 		C936DB911E117C70008F2056 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountManager.swift; path = CommonViews/AccountManager.swift; sourceTree = "<group>"; };
+		C936DB941E118670008F2056 /* InsetTextFild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextFild.swift; sourceTree = "<group>"; };
 		C9ECAF3F1E0D602D00358F21 /* KharkivChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KharkivChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ECAF421E0D602D00358F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9ECAF491E0D602D00358F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +129,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C936DB931E118625008F2056 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				C936DB941E118670008F2056 /* InsetTextFild.swift */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
 		C9ECAF361E0D602D00358F21 = {
 			isa = PBXGroup;
 			children = (
@@ -148,11 +158,16 @@
 		C9ECAF411E0D602D00358F21 /* KharkivChat */ = {
 			isa = PBXGroup;
 			children = (
+				C936DB931E118625008F2056 /* CommonViews */,
+				C936DB781E117AE5008F2056 /* Models */,
+				C936DB551E117AAB008F2056 /* Methods */,
 				C9ECAF421E0D602D00358F21 /* AppDelegate.swift */,
+				C936DB8B1E117AF8008F2056 /* ChatViewController.swift */,
+				C936DB761E117ADF008F2056 /* LoginViewController.swift */,
+				C936DB911E117C70008F2056 /* AccountManager.swift */,
 				C9ECAF491E0D602D00358F21 /* Assets.xcassets */,
 				C9ECAF4B1E0D602D00358F21 /* LaunchScreen.storyboard */,
 				C9ECAF4E1E0D602D00358F21 /* Info.plist */,
-				C936DB911E117C70008F2056 /* AccountManager.swift */,
 				C936DB5A1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift */,
 				C936DB5B1E117ACC008F2056 /* BaseMessageHandler.swift */,
 				C936DB601E117AD9008F2056 /* ConversationsViewController.swift */,
@@ -167,18 +182,14 @@
 				C936DB691E117AD9008F2056 /* FakeMessageFactory.swift */,
 				C936DB6A1E117AD9008F2056 /* FakeMessageSender.swift */,
 				C936DB5C1E117ACC008F2056 /* ChatItemsDemoDecorator.swift */,
-				C936DB761E117ADF008F2056 /* LoginViewController.swift */,
 				C936DB7D1E117AEE008F2056 /* SendingStatusCollectionViewCell.swift */,
 				C936DB7E1E117AEE008F2056 /* SendingStatusCollectionViewCell.xib */,
 				C936DB7F1E117AEE008F2056 /* SendingStatusPresenter.swift */,
 				C936DB801E117AEE008F2056 /* SlidingDatasSource.swift */,
 				C936DB811E117AEE008F2056 /* TimeSeparatorCollectionViewCell.swift */,
 				C936DB821E117AEE008F2056 /* TimeSeparatorModel.swift */,
-				C936DB8B1E117AF8008F2056 /* ChatViewController.swift */,
 				C936DB8C1E117AF8008F2056 /* LeftMenuViewController.swift */,
 				C936DB831E117AEE008F2056 /* TimeSeparatorPresenter.swift */,
-				C936DB781E117AE5008F2056 /* Models */,
-				C936DB551E117AAB008F2056 /* Methods */,
 			);
 			path = KharkivChat;
 			sourceTree = "<group>";
@@ -332,6 +343,7 @@
 				C936DB571E117AAB008F2056 /* ApiGetMessage.swift in Sources */,
 				C936DB7B1E117AE5008F2056 /* User.swift in Sources */,
 				C936DB861E117AEE008F2056 /* SendingStatusPresenter.swift in Sources */,
+				C936DB951E118670008F2056 /* InsetTextFild.swift in Sources */,
 				C936DB8D1E117AF8008F2056 /* ChatViewController.swift in Sources */,
 				C936DB8E1E117AF8008F2056 /* LeftMenuViewController.swift in Sources */,
 				C936DB881E117AEE008F2056 /* TimeSeparatorCollectionViewCell.swift in Sources */,

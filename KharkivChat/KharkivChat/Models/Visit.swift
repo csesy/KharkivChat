@@ -24,6 +24,4 @@ class Message: NSObject, Mappable {
         text <- map["text"]
         user <- map["user"]
     }
-    
-    
 }

@@ -9,8 +9,21 @@
 import Foundation
 
 class AccountManager : NSObject {
-    static let URL = "terst"
+    private let keyNickName = "keyNickName"
+    
+    static let URL = "https://kharkivchat.herokuapp.com/messages"
     static let sharedInstance = AccountManager()
     
-    var nickName = "Test"
+    private override init() {
+        super.init()
+        self.nickName = UserDefaults.standard.object(forKey: keyNickName) as! String?
+    }
+    
+    var nickName : String? {
+        didSet {
+            UserDefaults.standard.set(nickName, forKey: keyNickName)
+        }
+    }
+    
+    
 }

@@ -27,6 +27,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func switchToChat() {
         let chatViewController = ChatViewController()
+        
+        let initialCount = 0
+        let pageSize = 50
+        
+        var dataSource: FakeDataSource!
+        
+        if dataSource == nil {
+            dataSource = FakeDataSource(count: initialCount, pageSize: pageSize)
+        }
+        chatViewController.dataSource = dataSource
+        chatViewController.messageSender = dataSource.messageSender
+
+        
         window?.rootViewController = chatViewController
     }
 

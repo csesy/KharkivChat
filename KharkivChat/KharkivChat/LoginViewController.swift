@@ -12,32 +12,26 @@ import SnapKit
 class LoginViewController: UIViewController {
     
     
-    fileprivate let textField = UITextField()
+    fileprivate let textField = InsetTextField()
     let loginButton = UIButton(type: .system)
     let autoFillTextFild = "Please enter your nick name..."
     var trimmedTextField : String?
-       override func viewDidLoad() {
+    override func viewDidLoad() {
         
         textField.text = AccountManager.sharedInstance.nickName
         super.viewDidLoad()
-        layoutSubviews()
-        
-        let getmessages = ApiGetMessage()
-        getmessages.completionClouser = {messages, error in
-        
-        
-        print(messages)
-        }
+        buildView()
     }
     
-    func layoutSubviews() {
+    func buildView() {
+        self.view.backgroundColor = UIColor.white
+        
         textField.delegate = self
-        //let trimmedString = string.trimmingCharacters(in: .whitespaces)
         textField.backgroundColor = UIColor.white
         textField.layer.borderColor = UIColor.black.cgColor
         textField.layer.borderWidth = 1
+        textField.insetX = 10
         textField.placeholder = autoFillTextFild
-        //textField.insetX = 10
         self.view.addSubview(textField)
         textField.snp.makeConstraints { (make) in
             make.left.equalTo(self.view.snp.left).inset(20)
@@ -76,45 +70,45 @@ class LoginViewController: UIViewController {
             make.left.equalTo(self.view.snp.left).inset(20)
             make.right.equalTo(self.view.snp.right).inset(20)
             make.height.equalTo(40)
-
-      loginButton.addTarget(self, action: #selector(buttonTaped(_:)), for: .touchUpInside)
+            
+            loginButton.addTarget(self, action: #selector(buttonTaped(_:)), for: .touchUpInside)
         }
     }
     
     func buttonTaped(_ sender : UIButton){
+        textField.resignFirstResponder()
         print(textField.text!.characters.count)
         trimmedTextField = textField.text?.trimmingCharacters(in: .whitespaces)
         print(trimmedTextField!.characters.count)
         
-        
         let LengthTextField = trimmedTextField?.characters.count
-    
         
-        
-
         if LengthTextField! <= 20, !(trimmedTextField?.isEmpty)!
         {
             //do something if it's not empty
             AccountManager.sharedInstance.nickName = textField.text!
             print("\(trimmedTextField!)")
-        
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.switchToChat()
+            
         } else {
             
-           UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
+            UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
                 self.textField.backgroundColor = UIColor.red
                 self.textField.placeholder = "You did not enter a nickname"
-           }, completion: { (completed) in
-            
-            UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
-                self.textField.backgroundColor = UIColor.white
-                self.textField.placeholder = self.autoFillTextFild
             }, completion: { (completed) in
-               
+                
+                UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
+                    self.textField.backgroundColor = UIColor.white
+                    self.textField.placeholder = self.autoFillTextFild
+                }, completion: { (completed) in
+                    
+                })
             })
-           })
         }
     }
-   
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -125,7 +119,7 @@ extension LoginViewController: UITextFieldDelegate {
         if string == "" {
             return true
         }
-        return textField.text!.characters.count <= 20
+        return textField.text!.characters.count <= 19
     }
 }
 

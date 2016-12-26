@@ -12,7 +12,7 @@ import SnapKit
 class ViewController: UIViewController {
     
     
-    let textField = TextField()
+    fileprivate let textField = TextField()
     let loginButton = UIButton(type: .system)
     let autoFillTextFild = "Please enter your nick name..."
     var trimmedTextField : String?
@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     }
     
     func layoutSubviews() {
+        textField.delegate = self
         //let trimmedString = string.trimmingCharacters(in: .whitespaces)
         textField.backgroundColor = UIColor.white
         textField.layer.borderColor = UIColor.black.cgColor
@@ -84,8 +85,14 @@ class ViewController: UIViewController {
         print(textField.text!.characters.count)
         trimmedTextField = textField.text?.trimmingCharacters(in: .whitespaces)
         print(trimmedTextField!.characters.count)
+        
+        
+        let LengthTextField = trimmedTextField?.characters.count
+    
+        
+        
 
-        if let text = trimmedTextField, !text.isEmpty
+        if LengthTextField! <= 20, !(trimmedTextField?.isEmpty)!
         {
             //do something if it's not empty
             AccountManager.sharedInstance.nickName = textField.text!
@@ -112,5 +119,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 }
-
+extension ViewController: UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if string == "" {
+            return true
+        }
+        return textField.text!.characters.count <= 20
+    }
+}
 

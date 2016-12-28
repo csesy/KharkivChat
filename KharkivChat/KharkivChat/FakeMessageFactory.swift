@@ -73,6 +73,8 @@ class FakeMessageFactory {
     class func createTextMessageModel(_ uid: String, isIncoming: Bool) -> DemoTextMessageModel {
         let incomingText: String = isIncoming ? "incoming" : "outgoing"
         let maxText = self.demoTexts.randomItem()
+       //let maxText =
+        
         let length: Int = 10 + Int(arc4random_uniform(300))
         let text = "\(maxText.substring(to: maxText.characters.index(maxText.startIndex, offsetBy: length))) incoming:\(incomingText), #:\(uid)"
         return KharkivChat.createTextMessageModel(uid, text: text, isIncoming: isIncoming)

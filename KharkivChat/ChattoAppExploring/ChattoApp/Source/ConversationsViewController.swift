@@ -24,12 +24,15 @@
 
 import UIKit
 
+/*
+ This is the initial viewController.
+ */
 class ConversationsViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         var initialCount = 0
-        let pageSize = 50
+        let pageSize = 50 //Messages loaded per one request - it seems.
 
         var dataSource: FakeDataSource!
         if segue.identifier == "0 messages" {
@@ -56,6 +59,7 @@ class ConversationsViewController: UITableViewController {
         }()!
 
         if dataSource == nil {
+            //FakeDataSource can be created with different fake initial count.
             dataSource = FakeDataSource(count: initialCount, pageSize: pageSize)
         }
         chatController.dataSource = dataSource

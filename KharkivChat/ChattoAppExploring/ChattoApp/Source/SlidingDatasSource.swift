@@ -29,6 +29,8 @@ public enum InsertPosition {
     case bottom
 }
 
+///This classs is the source used in FakeDataSource.
+
 public class SlidingDataSource<Element> {
 
     private var pageSize: Int
@@ -42,6 +44,7 @@ public class SlidingDataSource<Element> {
         return Array(items[offset..<offset+self.windowCount])
     }
 
+    //The SlidingDataSource data source is initiated after FakeDataSource
     public init(count: Int, pageSize: Int, itemGenerator: (() -> Element)?) {
         self.windowOffset = count
         self.itemsOffset = count
@@ -57,7 +60,8 @@ public class SlidingDataSource<Element> {
             self.insertItem(item, position: .bottom)
         }
     }
-
+    
+    //Here we insert the generated items. Called from init
     private func generateItems(_ count: Int, position: InsertPosition) {
         guard count > 0 else { return }
         guard let itemGenerator = self.itemGenerator else {
@@ -68,6 +72,7 @@ public class SlidingDataSource<Element> {
         }
     }
 
+    //
     public func insertItem(_ item: Element, position: InsertPosition) {
         if position == .top {
             self.items.insert(item, at: 0)

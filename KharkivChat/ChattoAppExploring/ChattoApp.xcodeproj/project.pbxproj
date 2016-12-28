@@ -13,7 +13,6 @@
 		C341D42E1C9635DF00FD3463 /* TimeSeparatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341D42B1C9635DF00FD3463 /* TimeSeparatorModel.swift */; };
 		C341D42F1C9635DF00FD3463 /* TimeSeparatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341D42C1C9635DF00FD3463 /* TimeSeparatorPresenter.swift */; };
 		C341D4301C9635DF00FD3463 /* TimeSeparatorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341D42D1C9635DF00FD3463 /* TimeSeparatorCollectionViewCell.swift */; };
-		C35A6F4F1BF807EC0085CA19 /* SlidingDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35A6F4E1BF807EC0085CA19 /* SlidingDataSourceTests.swift */; };
 		C3F91DB61C75EF9E00D461D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F91DA01C75EF9E00D461D2 /* AppDelegate.swift */; };
 		C3F91DB71C75EF9E00D461D2 /* ChatItemsDemoDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F91DA11C75EF9E00D461D2 /* ChatItemsDemoDecorator.swift */; };
 		C3F91DB81C75EF9E00D461D2 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F91DA21C75EF9E00D461D2 /* ConversationsViewController.swift */; };
@@ -35,16 +34,6 @@
 		DD49AA1095C478DD42524839 /* Pods_ChattoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A796C853501DB82BA5DC27 /* Pods_ChattoApp.framework */; };
 		FE2D050B1C915ADB006F902B /* BaseMessageCollectionViewCellAvatarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D050A1C915ADB006F902B /* BaseMessageCollectionViewCellAvatarStyle.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C33FBFBA1BDE441C008E3545 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C33FBF9D1BDE441C008E3545 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C33FBFA41BDE441C008E3545;
-			remoteInfo = ChattoApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C33FBFF61BDE6BA8008E3545 /* Embed Frameworks */ = {
@@ -69,12 +58,9 @@
 		C33FBFAF1BDE441C008E3545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C33FBFB21BDE441C008E3545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C33FBFB41BDE441C008E3545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C33FBFB91BDE441C008E3545 /* ChattoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChattoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C33FBFBF1BDE441C008E3545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C341D42B1C9635DF00FD3463 /* TimeSeparatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeSeparatorModel.swift; path = "Time Separator/TimeSeparatorModel.swift"; sourceTree = "<group>"; };
 		C341D42C1C9635DF00FD3463 /* TimeSeparatorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeSeparatorPresenter.swift; path = "Time Separator/TimeSeparatorPresenter.swift"; sourceTree = "<group>"; };
 		C341D42D1C9635DF00FD3463 /* TimeSeparatorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeSeparatorCollectionViewCell.swift; path = "Time Separator/TimeSeparatorCollectionViewCell.swift"; sourceTree = "<group>"; };
-		C35A6F4E1BF807EC0085CA19 /* SlidingDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingDataSourceTests.swift; sourceTree = "<group>"; };
 		C3F91DA01C75EF9E00D461D2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3F91DA11C75EF9E00D461D2 /* ChatItemsDemoDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatItemsDemoDecorator.swift; sourceTree = "<group>"; };
 		C3F91DA21C75EF9E00D461D2 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
@@ -105,13 +91,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C33FBFB61BDE441C008E3545 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				C33FBFA71BDE441C008E3545 /* ChattoApp */,
-				C33FBFBC1BDE441C008E3545 /* ChattoAppTests */,
 				C33FBFA61BDE441C008E3545 /* Products */,
 				0852C8B139C7CFA0A1C22090 /* Frameworks */,
 				B616EDF620454A787C7E7D84 /* Pods */,
@@ -148,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				C33FBFA51BDE441C008E3545 /* ChattoApp.app */,
-				C33FBFB91BDE441C008E3545 /* ChattoAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,15 +140,6 @@
 				C33FBFB41BDE441C008E3545 /* Info.plist */,
 			);
 			path = ChattoApp;
-			sourceTree = "<group>";
-		};
-		C33FBFBC1BDE441C008E3545 /* ChattoAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				C35A6F4E1BF807EC0085CA19 /* SlidingDataSourceTests.swift */,
-				C33FBFBF1BDE441C008E3545 /* Info.plist */,
-			);
-			path = ChattoAppTests;
 			sourceTree = "<group>";
 		};
 		C341D42A1C96359000FD3463 /* Time Separator */ = {
@@ -260,24 +228,6 @@
 			productReference = C33FBFA51BDE441C008E3545 /* ChattoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C33FBFB81BDE441C008E3545 /* ChattoAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C33FBFD01BDE441C008E3545 /* Build configuration list for PBXNativeTarget "ChattoAppTests" */;
-			buildPhases = (
-				C33FBFB51BDE441C008E3545 /* Sources */,
-				C33FBFB61BDE441C008E3545 /* Frameworks */,
-				C33FBFB71BDE441C008E3545 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C33FBFBB1BDE441C008E3545 /* PBXTargetDependency */,
-			);
-			name = ChattoAppTests;
-			productName = ChattoAppTests;
-			productReference = C33FBFB91BDE441C008E3545 /* ChattoAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -290,12 +240,8 @@
 				TargetAttributes = {
 					C33FBFA41BDE441C008E3545 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = TNNH6FD49C;
 						LastSwiftMigration = 0800;
-					};
-					C33FBFB81BDE441C008E3545 = {
-						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = C33FBFA41BDE441C008E3545;
 					};
 				};
 			};
@@ -313,7 +259,6 @@
 			projectRoot = "";
 			targets = (
 				C33FBFA41BDE441C008E3545 /* ChattoApp */,
-				C33FBFB81BDE441C008E3545 /* ChattoAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -327,13 +272,6 @@
 				C3F91DCD1C75EFE300D461D2 /* SendingStatusCollectionViewCell.xib in Resources */,
 				C33FBFB01BDE441C008E3545 /* Assets.xcassets in Resources */,
 				C33FBFAE1BDE441C008E3545 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C33FBFB71BDE441C008E3545 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,23 +367,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C33FBFB51BDE441C008E3545 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C35A6F4F1BF807EC0085CA19 /* SlidingDataSourceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C33FBFBB1BDE441C008E3545 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C33FBFA41BDE441C008E3545 /* ChattoApp */;
-			targetProxy = C33FBFBA1BDE441C008E3545 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C33FBFAC1BDE441C008E3545 /* Main.storyboard */ = {
@@ -564,6 +486,7 @@
 			baseConfigurationReference = 2CCB5DAFC70B636492325895 /* Pods-ChattoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TNNH6FD49C;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ChattoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -577,35 +500,12 @@
 			baseConfigurationReference = 6DABD92E2BA40464C1727DA2 /* Pods-ChattoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TNNH6FD49C;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ChattoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.badoo.ChattoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		C33FBFD11BDE441C008E3545 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ChattoAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.badoo.ChattoAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChattoApp.app/ChattoApp";
-			};
-			name = Debug;
-		};
-		C33FBFD21BDE441C008E3545 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ChattoAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.badoo.ChattoAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChattoApp.app/ChattoApp";
 			};
 			name = Release;
 		};
@@ -626,15 +526,6 @@
 			buildConfigurations = (
 				C33FBFCE1BDE441C008E3545 /* Debug */,
 				C33FBFCF1BDE441C008E3545 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C33FBFD01BDE441C008E3545 /* Build configuration list for PBXNativeTarget "ChattoAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C33FBFD11BDE441C008E3545 /* Debug */,
-				C33FBFD21BDE441C008E3545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

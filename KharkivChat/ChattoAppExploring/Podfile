@@ -1,7 +1,13 @@
-platform :ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
 use_frameworks!
 
-target 'ChattoApp' do
-	pod 'Chatto', :path => ".."
-	pod 'ChattoAdditions', :path => ".."
+def all_pods
+    pod ‘Chatto’
+    pod 'ChattoAdditions'
+end
+
+target ‘ChattoApp’ do
+    all_pods
 end

@@ -30,13 +30,15 @@ class FakeDataSource: ChatDataSourceProtocol {
     let preferredMaxWindowSize = 500
 
     var slidingWindow: SlidingDataSource<ChatItemProtocol>!
+    
+    //The FakeDataSource can be inited with set count of randomly generated messages. Page size - number of items loaded per one request
     init(count: Int, pageSize: Int) {
         self.slidingWindow = SlidingDataSource(count: count, pageSize: pageSize) { () -> ChatItemProtocol in
             defer { self.nextMessageId += 1 }
             return FakeMessageFactory.createChatItem("\(self.nextMessageId)")
         }
     }
-
+    
     init(messages: [ChatItemProtocol], pageSize: Int) {
         self.slidingWindow = SlidingDataSource(items: messages, pageSize: pageSize)
     }

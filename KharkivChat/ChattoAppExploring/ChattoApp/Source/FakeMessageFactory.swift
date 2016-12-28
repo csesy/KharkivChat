@@ -52,16 +52,19 @@ func createPhotoMessageModel(_ uid: String, image: UIImage, size: CGSize, isInco
     return photoMessageModel
 }
 
+///FAKE message factory generates some random messages
 class FakeMessageFactory {
     static let demoTexts = [
         "Lorem ipsum dolor sit amet 😇, https://github.com/badoo/Chatto consectetur adipiscing elit , sed do eiusmod tempor incididunt 07400000000 📞 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore https://github.com/badoo/Chatto eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 07400000000 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     ]
-
+    
+    //Generate random chatItem
     class func createChatItem(_ uid: String) -> MessageModelProtocol {
         let isIncoming: Bool = arc4random_uniform(100) % 2 == 0
         return self.createChatItem(uid, isIncoming: isIncoming)
     }
 
+    //This is the generator of messages passed to SlidingDataSource to generate messages.
     class func createChatItem(_ uid: String, isIncoming: Bool) -> MessageModelProtocol {
         if arc4random_uniform(100) % 2 == 0 {
             return self.createTextMessageModel(uid, isIncoming: isIncoming)
@@ -78,6 +81,7 @@ class FakeMessageFactory {
         return ChattoApp.createTextMessageModel(uid, text: text, isIncoming: isIncoming)
     }
 
+    //Generate random image
     class func createPhotoMessageModel(_ uid: String, isIncoming: Bool) -> DemoPhotoMessageModel {
         var imageSize = CGSize.zero
         switch arc4random_uniform(100) % 3 {

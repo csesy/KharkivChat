@@ -75,7 +75,7 @@ class FakeDataSource: ChatDataSourceProtocol {
         self.slidingWindow.adjustWindow(focusPosition: 0, maxWindowSize: self.preferredMaxWindowSize)
         self.delegate?.chatDataSourceDidUpdate(self, updateType: .pagination)
     }
-
+//отправка сообщения в чат sender
     func addTextMessage(_ text: String) {
         let uid = "\(self.nextMessageId)"
         self.nextMessageId += 1
@@ -83,6 +83,13 @@ class FakeDataSource: ChatDataSourceProtocol {
         self.messageSender.sendMessage(message)
         self.slidingWindow.insertItem(message, position: .bottom)
         self.delegate?.chatDataSourceDidUpdate(self)
+        
+        let sender = APIMessageSender()
+        sender.messageText = text
+        sender.nickName = AccountManager.sharedInstance.nickName
+        sender.completionClosure = {
+            error in
+        }
     }
 
     func addPhotoMessage(_ image: UIImage) {

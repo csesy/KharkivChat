@@ -12,6 +12,7 @@ class AccountManager : NSObject {
     private let keyNickName = "keyNickName"
     
     static let URL = "https://kharkivchat.herokuapp.com/messages"
+    static let Email = "https://kharkivchat.herokuapp.com/newmessage"
     static let sharedInstance = AccountManager()
     
     private override init() {

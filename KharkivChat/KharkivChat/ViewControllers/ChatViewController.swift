@@ -32,13 +32,22 @@ class ChatViewController: BaseChatViewController {
         let addIncomingMessageButton = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(ChatViewController.addRandomIncomingMessage))
         self.navigationItem.rightBarButtonItem = addIncomingMessageButton
         
-        let getmessages = ApiGetMessage()
-        getmessages.completionClouser = {messages, error in
-            
-            for message in messages! {
-                self.dataSource.addTextMessage(message.text)
-            }
-        }
+//        let getmessages = ApiGetMessage()
+//        getmessages.completionClouser = {messages, error in
+//            
+////            for message in messages! {
+////                self.dataSource.addTextMessage(message.text)
+////        
+////            
+////            }
+//            
+//            //подключение к нопке отправку сообщения
+//            let sendMessages = APIMessageSender()
+//          sendMessages.completionClosure = {error in
+//            
+//            }
+//            
+//        }
     }
     
     @objc

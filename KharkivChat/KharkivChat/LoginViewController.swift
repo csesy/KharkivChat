@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
         textField.text = AccountManager.sharedInstance.nickName
         super.viewDidLoad()
         buildView()
+        
+      
     }
     
     func buildView() {
@@ -109,9 +111,13 @@ class LoginViewController: UIViewController {
         }
     }
     
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    
 }
 extension LoginViewController: UITextFieldDelegate {
     

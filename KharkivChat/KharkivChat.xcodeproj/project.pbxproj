@@ -37,6 +37,7 @@
 		C936DB8E1E117AF8008F2056 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB8C1E117AF8008F2056 /* LeftMenuViewController.swift */; };
 		C936DB921E117C70008F2056 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB911E117C70008F2056 /* AccountManager.swift */; };
 		C936DB951E118670008F2056 /* InsetTextFild.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB941E118670008F2056 /* InsetTextFild.swift */; };
+		C96F25791E13BC6B004FB115 /* APIMessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96F25781E13BC6B004FB115 /* APIMessageSender.swift */; };
 		C9ECAF431E0D602D00358F21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ECAF421E0D602D00358F21 /* AppDelegate.swift */; };
 		C9ECAF4A1E0D602D00358F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9ECAF491E0D602D00358F21 /* Assets.xcassets */; };
 		C9ECAF4D1E0D602D00358F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9ECAF4B1E0D602D00358F21 /* LaunchScreen.storyboard */; };
@@ -73,6 +74,7 @@
 		C936DB8C1E117AF8008F2056 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftMenuViewController.swift; path = ViewControllers/LeftMenuViewController.swift; sourceTree = "<group>"; };
 		C936DB911E117C70008F2056 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountManager.swift; path = CommonViews/AccountManager.swift; sourceTree = "<group>"; };
 		C936DB941E118670008F2056 /* InsetTextFild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextFild.swift; sourceTree = "<group>"; };
+		C96F25781E13BC6B004FB115 /* APIMessageSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMessageSender.swift; sourceTree = "<group>"; };
 		C9ECAF3F1E0D602D00358F21 /* KharkivChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KharkivChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ECAF421E0D602D00358F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9ECAF491E0D602D00358F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				C936DB561E117AAB008F2056 /* ApiGetMessage.swift */,
+				C96F25781E13BC6B004FB115 /* APIMessageSender.swift */,
 			);
 			name = Methods;
 			path = API/Methods;
@@ -333,6 +336,7 @@
 				C936DB5E1E117ACC008F2056 /* BaseMessageHandler.swift in Sources */,
 				C9ECAF431E0D602D00358F21 /* AppDelegate.swift in Sources */,
 				C936DB721E117AD9008F2056 /* DemoTextMessageViewModel.swift in Sources */,
+				C96F25791E13BC6B004FB115 /* APIMessageSender.swift in Sources */,
 				C936DB921E117C70008F2056 /* AccountManager.swift in Sources */,
 				C936DB7C1E117AE5008F2056 /* Visit.swift in Sources */,
 				C936DB841E117AEE008F2056 /* SendingStatusCollectionViewCell.swift in Sources */,

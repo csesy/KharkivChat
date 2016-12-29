@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76CEE1F81E1552FA00725B44 /* ChatNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CEE1F71E1552FA00725B44 /* ChatNavigationViewController.swift */; };
 		9FC5EE9353DDFBCF616E8D5E /* Pods_KharkivChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB1005E680BEB6A09A1DBB0 /* Pods_KharkivChat.framework */; };
 		C936DB571E117AAB008F2056 /* ApiGetMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB561E117AAB008F2056 /* ApiGetMessages.swift */; };
 		C936DB5D1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB5A1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76CEE1F71E1552FA00725B44 /* ChatNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatNavigationViewController.swift; sourceTree = "<group>"; };
 		771194759F52CC5C2424663C /* Pods-KharkivChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KharkivChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-KharkivChat/Pods-KharkivChat.release.xcconfig"; sourceTree = "<group>"; };
 		C936DB561E117AAB008F2056 /* ApiGetMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiGetMessages.swift; sourceTree = "<group>"; };
 		C936DB5A1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMessageCollectionViewCellAvatarStyle.swift; sourceTree = "<group>"; };
@@ -98,6 +100,22 @@
 				DAB1005E680BEB6A09A1DBB0 /* Pods_KharkivChat.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76CEE1F41E1552CC00725B44 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C936DB8B1E117AF8008F2056 /* ChatViewController.swift */,
+				76CEE1F71E1552FA00725B44 /* ChatNavigationViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		76CEE1F51E1552D300725B44 /* Chatto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Chatto;
 			sourceTree = "<group>";
 		};
 		A616B312422B2992A6520D6B /* Pods */ = {
@@ -157,11 +175,12 @@
 		C9ECAF411E0D602D00358F21 /* KharkivChat */ = {
 			isa = PBXGroup;
 			children = (
+				76CEE1F41E1552CC00725B44 /* ViewControllers */,
 				C936DB931E118625008F2056 /* CommonViews */,
 				C936DB781E117AE5008F2056 /* Models */,
 				C936DB551E117AAB008F2056 /* Methods */,
+				76CEE1F51E1552D300725B44 /* Chatto */,
 				C9ECAF421E0D602D00358F21 /* AppDelegate.swift */,
-				C936DB8B1E117AF8008F2056 /* ChatViewController.swift */,
 				C936DB761E117ADF008F2056 /* LoginViewController.swift */,
 				C936DB911E117C70008F2056 /* AccountManager.swift */,
 				C9ECAF491E0D602D00358F21 /* Assets.xcassets */,
@@ -329,6 +348,7 @@
 				C9ECAF431E0D602D00358F21 /* AppDelegate.swift in Sources */,
 				C936DB721E117AD9008F2056 /* DemoTextMessageViewModel.swift in Sources */,
 				C96F25791E13BC6B004FB115 /* APIMessageSender.swift in Sources */,
+				76CEE1F81E1552FA00725B44 /* ChatNavigationViewController.swift in Sources */,
 				C936DB921E117C70008F2056 /* AccountManager.swift in Sources */,
 				C936DB7C1E117AE5008F2056 /* Visit.swift in Sources */,
 				C936DB841E117AEE008F2056 /* SendingStatusCollectionViewCell.swift in Sources */,

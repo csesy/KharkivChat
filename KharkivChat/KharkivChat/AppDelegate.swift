@@ -26,7 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func switchToChat() {
+        
         let chatViewController = ChatViewController()
+
+        let navigationController = ChatNavigationViewController()
+        navigationController.viewControllers = [chatViewController]
         
         let initialCount = 0
         let pageSize = 50
@@ -40,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         chatViewController.messageSender = dataSource.messageSender
 
         
-        window?.rootViewController = chatViewController
+        window?.rootViewController = navigationController
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

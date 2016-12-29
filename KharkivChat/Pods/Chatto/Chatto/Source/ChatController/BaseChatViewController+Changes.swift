@@ -26,6 +26,7 @@ import Foundation
 
 extension BaseChatViewController: ChatDataSourceDelegateProtocol {
 
+    //This is called from BaseChatViewController subclass. On message status change.
     public func chatDataSourceDidUpdate(_ chatDataSource: ChatDataSourceProtocol, updateType: UpdateType) {
         self.enqueueModelUpdate(updateType: updateType)
     }

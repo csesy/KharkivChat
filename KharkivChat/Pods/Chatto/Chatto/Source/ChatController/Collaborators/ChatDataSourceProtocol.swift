@@ -25,9 +25,10 @@
 import Foundation
 
 public enum UpdateType {
+    //All go with animation
     case normal
     case firstLoad
-    case pagination
+    case pagination 
     case reload
     case messageCountReduction
 }

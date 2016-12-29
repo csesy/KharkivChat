@@ -32,7 +32,7 @@ class ChatViewController: BaseChatViewController {
         let addIncomingMessageButton = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(ChatViewController.addRandomIncomingMessage))
         self.navigationItem.rightBarButtonItem = addIncomingMessageButton
         
-        self.dataSource.loadAllMessagesAndSisplay()
+        self.dataSource.loadAllMessagesAndDisplay()
     }
     
     @objc

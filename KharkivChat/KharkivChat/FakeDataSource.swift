@@ -63,6 +63,7 @@ class FakeDataSource: ChatDataSourceProtocol {
         return self.slidingWindow.itemsInWindow
     }
 
+    //The delegate. Calls several protocol methods: chatDataSourceDidUpdate
     weak var delegate: ChatDataSourceDelegateProtocol?
 
     func loadNext() {
@@ -76,7 +77,8 @@ class FakeDataSource: ChatDataSourceProtocol {
         self.slidingWindow.adjustWindow(focusPosition: 0, maxWindowSize: self.preferredMaxWindowSize)
         self.delegate?.chatDataSourceDidUpdate(self, updateType: .pagination)
     }
-//отправка сообщения в чат sender
+
+    //Send message to the chat. Initiates messageSender to send it.
     func addTextMessage(_ text: String) {
         let uid = "\(self.nextMessageId)"
         self.nextMessageId += 1
@@ -84,8 +86,6 @@ class FakeDataSource: ChatDataSourceProtocol {
         self.messageSender.sendMessage(message)
         self.slidingWindow.insertItem(message, position: .bottom)
         self.delegate?.chatDataSourceDidUpdate(self)
-        
-
     }
 
     func addPhotoMessage(_ image: UIImage) {
@@ -97,7 +97,7 @@ class FakeDataSource: ChatDataSourceProtocol {
         self.delegate?.chatDataSourceDidUpdate(self)
     }
 
-    func loadAllMessagesAndSisplay() {
+    func loadAllMessagesAndDisplay() {
         let messageLoader = ApiGetMessages()
         messageLoader.completionClouser = {messages, error in
             if let messages = messages {
@@ -106,7 +106,7 @@ class FakeDataSource: ChatDataSourceProtocol {
                     let messageToAdd = DemoTextMessageModel(messageModel: messageModel, text: message.text)
                     self.nextMessageId += 1
                     self.slidingWindow.insertItem(messageToAdd, position: .bottom)
-                    self.delegate?.chatDataSourceDidUpdate(self)
+                    self.delegate?.chatDataSourceDidUpdate(self, updateType: .messageCountReduction)
                 }
             }
         }

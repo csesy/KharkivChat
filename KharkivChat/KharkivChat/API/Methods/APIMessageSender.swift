@@ -33,10 +33,10 @@ class APIMessageSender {
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             switch response.result {
             case .success:
-                break
+                self.completionClosure?(nil)
             case .failure(let error):
+                self.completionClosure?(error)
                 print(error)
-                break
             }
         }
     }

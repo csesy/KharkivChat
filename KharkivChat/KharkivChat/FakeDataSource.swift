@@ -85,13 +85,7 @@ class FakeDataSource: ChatDataSourceProtocol {
         self.slidingWindow.insertItem(message, position: .bottom)
         self.delegate?.chatDataSourceDidUpdate(self)
         
-        let sender = APIMessageSender()
-        sender.messageText = text
-        sender.nickName = AccountManager.sharedInstance.nickName
-        sender.completionClosure = {
-            error in
-            
-        }
+
     }
 
     func addPhotoMessage(_ image: UIImage) {

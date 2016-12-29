@@ -12,8 +12,6 @@
 		C936DB5D1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB5A1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift */; };
 		C936DB5E1E117ACC008F2056 /* BaseMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB5B1E117ACC008F2056 /* BaseMessageHandler.swift */; };
 		C936DB5F1E117ACC008F2056 /* ChatItemsDemoDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB5C1E117ACC008F2056 /* ChatItemsDemoDecorator.swift */; };
-		C936DB6B1E117AD9008F2056 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB601E117AD9008F2056 /* ConversationsViewController.swift */; };
-		C936DB6C1E117AD9008F2056 /* DemoChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB611E117AD9008F2056 /* DemoChatViewController.swift */; };
 		C936DB6D1E117AD9008F2056 /* DemoPhotoMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB621E117AD9008F2056 /* DemoPhotoMessageHandler.swift */; };
 		C936DB6E1E117AD9008F2056 /* DemoPhotoMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB631E117AD9008F2056 /* DemoPhotoMessageModel.swift */; };
 		C936DB6F1E117AD9008F2056 /* DemoPhotoMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB641E117AD9008F2056 /* DemoPhotoMessageViewModel.swift */; };
@@ -49,8 +47,6 @@
 		C936DB5A1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMessageCollectionViewCellAvatarStyle.swift; sourceTree = "<group>"; };
 		C936DB5B1E117ACC008F2056 /* BaseMessageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMessageHandler.swift; sourceTree = "<group>"; };
 		C936DB5C1E117ACC008F2056 /* ChatItemsDemoDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatItemsDemoDecorator.swift; sourceTree = "<group>"; };
-		C936DB601E117AD9008F2056 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
-		C936DB611E117AD9008F2056 /* DemoChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatViewController.swift; sourceTree = "<group>"; };
 		C936DB621E117AD9008F2056 /* DemoPhotoMessageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPhotoMessageHandler.swift; sourceTree = "<group>"; };
 		C936DB631E117AD9008F2056 /* DemoPhotoMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPhotoMessageModel.swift; sourceTree = "<group>"; };
 		C936DB641E117AD9008F2056 /* DemoPhotoMessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPhotoMessageViewModel.swift; sourceTree = "<group>"; };
@@ -173,8 +169,6 @@
 				C9ECAF4E1E0D602D00358F21 /* Info.plist */,
 				C936DB5A1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift */,
 				C936DB5B1E117ACC008F2056 /* BaseMessageHandler.swift */,
-				C936DB601E117AD9008F2056 /* ConversationsViewController.swift */,
-				C936DB611E117AD9008F2056 /* DemoChatViewController.swift */,
 				C936DB621E117AD9008F2056 /* DemoPhotoMessageHandler.swift */,
 				C936DB631E117AD9008F2056 /* DemoPhotoMessageModel.swift */,
 				C936DB641E117AD9008F2056 /* DemoPhotoMessageViewModel.swift */,
@@ -326,9 +320,7 @@
 				C936DB711E117AD9008F2056 /* DemoTextMessageModel.swift in Sources */,
 				C936DB731E117AD9008F2056 /* FakeDataSource.swift in Sources */,
 				C936DB5F1E117ACC008F2056 /* ChatItemsDemoDecorator.swift in Sources */,
-				C936DB6B1E117AD9008F2056 /* ConversationsViewController.swift in Sources */,
 				C936DB751E117AD9008F2056 /* FakeMessageSender.swift in Sources */,
-				C936DB6C1E117AD9008F2056 /* DemoChatViewController.swift in Sources */,
 				C936DB6F1E117AD9008F2056 /* DemoPhotoMessageViewModel.swift in Sources */,
 				C936DB8A1E117AEE008F2056 /* TimeSeparatorPresenter.swift in Sources */,
 				C936DB891E117AEE008F2056 /* TimeSeparatorModel.swift in Sources */,

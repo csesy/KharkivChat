@@ -10,28 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KharkivChat/FakeDataSource.swift"
-            timestampString = "504704851.441479"
+            timestampString = "504705170.836993"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "loadAllMessagesAndSisplay()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "KharkivChat/API/Methods/ApiGetMessages.swift"
-            timestampString = "504704861.455073"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "performRequest()"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "addTextMessage(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,45 +26,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KharkivChat/FakeDataSource.swift"
-            timestampString = "504704864.832935"
+            timestampString = "504705184.105335"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "loadAllMessagesAndSisplay()"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "addTextMessage(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "KharkivChat.FakeDataSource.(loadAllMessagesAndSisplay () -&gt; ()).(closure #1)"
-                  moduleName = "KharkivChat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mf840/projects/KharkivChat/KharkivChat/KharkivChat/FakeDataSource.swift"
-                  timestampString = "504704947.901045"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "108"
-                  endingLineNumber = "108"
-                  offsetFromSymbolStart = "24">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "KharkivChat.FakeDataSource.(loadAllMessagesAndSisplay () -&gt; ()).(closure #1)"
-                  moduleName = "KharkivChat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mf840/projects/KharkivChat/KharkivChat/KharkivChat/FakeDataSource.swift"
-                  timestampString = "504704947.903424"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "108"
-                  endingLineNumber = "108"
-                  offsetFromSymbolStart = "99">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KharkivChat/FakeDataSource.swift"
+            timestampString = "504705184.92508"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "addTextMessage(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

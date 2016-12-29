@@ -90,6 +90,7 @@ class FakeDataSource: ChatDataSourceProtocol {
         sender.nickName = AccountManager.sharedInstance.nickName
         sender.completionClosure = {
             error in
+            
         }
     }
 
@@ -114,7 +115,6 @@ class FakeDataSource: ChatDataSourceProtocol {
                     self.delegate?.chatDataSourceDidUpdate(self)
                 }
             }
-            
         }
     }
     

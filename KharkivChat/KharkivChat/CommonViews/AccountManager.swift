@@ -11,7 +11,7 @@ import Foundation
 class AccountManager : NSObject {
     private let keyNickName = "keyNickName"
     
-    static let URL = "https://kharkivchat.herokuapp.com/messages"
+    static let URL = "https://kharkivchat.herokuapp.com/all"
     static let Email = "https://kharkivchat.herokuapp.com/newmessage"
     static let sharedInstance = AccountManager()
     

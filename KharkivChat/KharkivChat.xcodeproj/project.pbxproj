@@ -20,7 +20,7 @@
 		C936DB721E117AD9008F2056 /* DemoTextMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB671E117AD9008F2056 /* DemoTextMessageViewModel.swift */; };
 		C936DB731E117AD9008F2056 /* FakeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB681E117AD9008F2056 /* FakeDataSource.swift */; };
 		C936DB741E117AD9008F2056 /* FakeMessageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB691E117AD9008F2056 /* FakeMessageFactory.swift */; };
-		C936DB751E117AD9008F2056 /* FakeMessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB6A1E117AD9008F2056 /* FakeMessageSender.swift */; };
+		C936DB751E117AD9008F2056 /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB6A1E117AD9008F2056 /* MessageSender.swift */; };
 		C936DB771E117ADF008F2056 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB761E117ADF008F2056 /* LoginViewController.swift */; };
 		C936DB7B1E117AE5008F2056 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB791E117AE5008F2056 /* User.swift */; };
 		C936DB7C1E117AE5008F2056 /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB7A1E117AE5008F2056 /* Visit.swift */; };
@@ -55,7 +55,7 @@
 		C936DB671E117AD9008F2056 /* DemoTextMessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTextMessageViewModel.swift; sourceTree = "<group>"; };
 		C936DB681E117AD9008F2056 /* FakeDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeDataSource.swift; sourceTree = "<group>"; };
 		C936DB691E117AD9008F2056 /* FakeMessageFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeMessageFactory.swift; sourceTree = "<group>"; };
-		C936DB6A1E117AD9008F2056 /* FakeMessageSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeMessageSender.swift; sourceTree = "<group>"; };
+		C936DB6A1E117AD9008F2056 /* MessageSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSender.swift; sourceTree = "<group>"; };
 		C936DB761E117ADF008F2056 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C936DB791E117AE5008F2056 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C936DB7A1E117AE5008F2056 /* Visit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visit.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 				C936DB671E117AD9008F2056 /* DemoTextMessageViewModel.swift */,
 				C936DB681E117AD9008F2056 /* FakeDataSource.swift */,
 				C936DB691E117AD9008F2056 /* FakeMessageFactory.swift */,
-				C936DB6A1E117AD9008F2056 /* FakeMessageSender.swift */,
+				C936DB6A1E117AD9008F2056 /* MessageSender.swift */,
 				C936DB5C1E117ACC008F2056 /* ChatItemsDemoDecorator.swift */,
 				C936DB7D1E117AEE008F2056 /* SendingStatusCollectionViewCell.swift */,
 				C936DB7E1E117AEE008F2056 /* SendingStatusCollectionViewCell.xib */,
@@ -320,7 +320,7 @@
 				C936DB711E117AD9008F2056 /* DemoTextMessageModel.swift in Sources */,
 				C936DB731E117AD9008F2056 /* FakeDataSource.swift in Sources */,
 				C936DB5F1E117ACC008F2056 /* ChatItemsDemoDecorator.swift in Sources */,
-				C936DB751E117AD9008F2056 /* FakeMessageSender.swift in Sources */,
+				C936DB751E117AD9008F2056 /* MessageSender.swift in Sources */,
 				C936DB6F1E117AD9008F2056 /* DemoPhotoMessageViewModel.swift in Sources */,
 				C936DB8A1E117AEE008F2056 /* TimeSeparatorPresenter.swift in Sources */,
 				C936DB891E117AEE008F2056 /* TimeSeparatorModel.swift in Sources */,

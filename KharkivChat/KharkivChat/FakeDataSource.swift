@@ -42,8 +42,8 @@ class FakeDataSource: ChatDataSourceProtocol {
         self.slidingWindow = SlidingDataSource(items: messages, pageSize: pageSize)
     }
 
-    lazy var messageSender: FakeMessageSender = {
-        let sender = FakeMessageSender()
+    lazy var messageSender: MessageSender = {
+        let sender = MessageSender()
         sender.onMessageChanged = { [weak self] (message) in
             guard let sSelf = self else { return }
             sSelf.delegate?.chatDataSourceDidUpdate(sSelf)

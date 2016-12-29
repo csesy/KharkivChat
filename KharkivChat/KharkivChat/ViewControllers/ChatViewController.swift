@@ -13,7 +13,7 @@ import ChattoAdditions
 
 class ChatViewController: BaseChatViewController {
 
-    var messageSender: FakeMessageSender!
+    var messageSender: MessageSender!
     var dataSource: FakeDataSource! {
         didSet {
             self.chatDataSource = self.dataSource

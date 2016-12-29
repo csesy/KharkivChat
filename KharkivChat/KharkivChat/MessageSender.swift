@@ -30,16 +30,19 @@ public protocol DemoMessageModelProtocol: MessageModelProtocol {
     var status: MessageStatus { get set }
 }
 
-public class FakeMessageSender {
+public class MessageSender {
 
+    //The closure to notify about message status change.
     public var onMessageChanged: ((_ message: DemoMessageModelProtocol) -> Void)?
 
+    //The possibility to send several messages
     public func sendMessages(_ messages: [DemoMessageModelProtocol]) {
         for message in messages {
             self.sendMessage(message)
         }
     }
 
+    //The main function of the class - sends single message.
     public func sendMessage(_ message: DemoMessageModelProtocol) {
         self.updateMessage(message, status: .sending)
         let sender = APIMessageSender()
@@ -56,6 +59,7 @@ public class FakeMessageSender {
         }
     }
 
+    //Checks if the status is updated. In case updated - shows the notification about change.
     private func updateMessage(_ message: DemoMessageModelProtocol, status: MessageStatus) {
         if message.status != status {
             message.status = status
@@ -63,6 +67,7 @@ public class FakeMessageSender {
         }
     }
 
+    //Just calls the closure.
     private func notifyMessageChanged(_ message: DemoMessageModelProtocol) {
         self.onMessageChanged?(message)
     }

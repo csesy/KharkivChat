@@ -29,6 +29,8 @@ public enum InsertPosition {
     case bottom
 }
 
+//Makes a class generic. Here is the documentation: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Generics.html#//apple_ref/doc/uid/TP40014097-CH26-ID179
+//Works with any kind of objects. Assume that Element might be String, Float, any other class you need. In our case the ChatItemProtocol is used.
 public class SlidingDataSource<Element> {
 
     private var pageSize: Int

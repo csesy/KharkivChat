@@ -24,6 +24,7 @@
 
 import Foundation
 import Chatto
+import ChattoAdditions
 
 class FakeDataSource: ChatDataSourceProtocol {
     var nextMessageId: Int = 0
@@ -101,6 +102,22 @@ class FakeDataSource: ChatDataSourceProtocol {
         self.delegate?.chatDataSourceDidUpdate(self)
     }
 
+    func loadAllMessagesAndSisplay() {
+        let messageLoader = ApiGetMessages()
+        messageLoader.completionClouser = {messages, error in
+            if let messages = messages {
+                for message in messages {
+                    let messageModel = MessageModel(uid: "\(self.nextMessageId)", senderId: "234", type: "text", isIncoming: true, date: Date(), status: MessageStatus.success)
+                    let messageToAdd = DemoTextMessageModel(messageModel: messageModel, text: message.text)
+                    self.nextMessageId += 1
+                    self.slidingWindow.insertItem(messageToAdd, position: .bottom)
+                    self.delegate?.chatDataSourceDidUpdate(self)
+                }
+            }
+            
+        }
+    }
+    
     func addRandomIncomingMessage() {
         let message = FakeMessageFactory.createChatItem("\(self.nextMessageId)", isIncoming: true)
         self.nextMessageId += 1

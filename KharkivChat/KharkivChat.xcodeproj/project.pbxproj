@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9FC5EE9353DDFBCF616E8D5E /* Pods_KharkivChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB1005E680BEB6A09A1DBB0 /* Pods_KharkivChat.framework */; };
-		C936DB571E117AAB008F2056 /* ApiGetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB561E117AAB008F2056 /* ApiGetMessage.swift */; };
+		C936DB571E117AAB008F2056 /* ApiGetMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB561E117AAB008F2056 /* ApiGetMessages.swift */; };
 		C936DB5D1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB5A1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift */; };
 		C936DB5E1E117ACC008F2056 /* BaseMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB5B1E117ACC008F2056 /* BaseMessageHandler.swift */; };
 		C936DB5F1E117ACC008F2056 /* ChatItemsDemoDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936DB5C1E117ACC008F2056 /* ChatItemsDemoDecorator.swift */; };
@@ -45,7 +45,7 @@
 
 /* Begin PBXFileReference section */
 		771194759F52CC5C2424663C /* Pods-KharkivChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KharkivChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-KharkivChat/Pods-KharkivChat.release.xcconfig"; sourceTree = "<group>"; };
-		C936DB561E117AAB008F2056 /* ApiGetMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiGetMessage.swift; sourceTree = "<group>"; };
+		C936DB561E117AAB008F2056 /* ApiGetMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiGetMessages.swift; sourceTree = "<group>"; };
 		C936DB5A1E117ACC008F2056 /* BaseMessageCollectionViewCellAvatarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMessageCollectionViewCellAvatarStyle.swift; sourceTree = "<group>"; };
 		C936DB5B1E117ACC008F2056 /* BaseMessageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMessageHandler.swift; sourceTree = "<group>"; };
 		C936DB5C1E117ACC008F2056 /* ChatItemsDemoDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatItemsDemoDecorator.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		C936DB551E117AAB008F2056 /* Methods */ = {
 			isa = PBXGroup;
 			children = (
-				C936DB561E117AAB008F2056 /* ApiGetMessage.swift */,
+				C936DB561E117AAB008F2056 /* ApiGetMessages.swift */,
 				C96F25781E13BC6B004FB115 /* APIMessageSender.swift */,
 			);
 			name = Methods;
@@ -344,7 +344,7 @@
 				C936DB701E117AD9008F2056 /* DemoTextMessageHandler.swift in Sources */,
 				C936DB6E1E117AD9008F2056 /* DemoPhotoMessageModel.swift in Sources */,
 				C936DB6D1E117AD9008F2056 /* DemoPhotoMessageHandler.swift in Sources */,
-				C936DB571E117AAB008F2056 /* ApiGetMessage.swift in Sources */,
+				C936DB571E117AAB008F2056 /* ApiGetMessages.swift in Sources */,
 				C936DB7B1E117AE5008F2056 /* User.swift in Sources */,
 				C936DB861E117AEE008F2056 /* SendingStatusPresenter.swift in Sources */,
 				C936DB951E118670008F2056 /* InsetTextFild.swift in Sources */,

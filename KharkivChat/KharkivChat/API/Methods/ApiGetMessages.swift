@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
-class ApiGetMessage: NSObject {
+class ApiGetMessages: NSObject {
     var completionClouser: (([Message]?,_ error: Error?) ->())? {
         
         didSet{
